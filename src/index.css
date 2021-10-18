@@ -1,0 +1,58 @@
+body {
+	margin: 0;
+}
+.moviebox {
+	background-color: black;
+	color: white;
+	border: 2px solid grey;
+}
+.movielist {
+	display: flex;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	padding: 20px;
+	border-top: 2px solid grey;
+}
+.logo {
+	width: 100px;
+	height: 50px;
+}
+.movielist::-webkit-scrollbar {
+	display: none;
+}
+.movie {
+	width: 100%;
+	object-fit: contain;
+	max-height: 200px;
+	margin-right: 10px;
+	transition: transform 450ms;
+}
+.movie:hover {
+	transform: scale(1.08);
+}
+
+.poster {
+	color: white;
+	object-fit: contain;
+	height: 500px;
+}
+.poster__content {
+	padding-top: 150px;
+	height: 200px;
+}
+.poster__title {
+	font-size: 3rem;
+	padding-bottom: 0.5rem;
+}
+.poster__description {
+	font-weight: 600;
+	font-size: 1.3rem;
+	width: 45rem;
+	margin: auto auto;
+	padding-top: 5px;
+	text-align: center;
+}
+
+.btn {
+	font-size: 1.5rem;
+}
